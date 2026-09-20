@@ -1,0 +1,89 @@
+.login-page {
+  .login-tabs {
+    :global {
+      .ant-tabs-nav-list {
+        width: 100%;
+        .ant-tabs-tab {
+          flex: 1;
+          justify-content: center;
+        }
+      }
+
+      .ant-tabs-tab-btn {
+        font-size: 16px;
+      }
+
+      .ant-tabs-ink-bar {
+        --ant-line-width-bold: 3px;
+        --ant-tabs-ink-bar-color: linear-gradient(to right, #4284f5, #2255c9);
+      }
+    }
+  }
+
+  .login-card {
+    width: 450px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(to bottom, #4284f5, #2255c9);
+    }
+
+    .login-title {
+      font-size: 26px;
+      font-weight: bold;
+      color: #2a3548;
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 32px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background: linear-gradient(90deg, #4284f5, #2255c9);
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px;
+      }
+    }
+
+    .login-input {
+      --ant-input-padding-block-lg: 14px;
+      background-color: rgba(248, 250, 252, 0.8);
+
+      &:hover {
+        background-color: white;
+      }
+    }
+
+    .login-button {
+      width: 100%;
+      background-image: linear-gradient(135deg, #4284f5, #2255c9);
+      --ant-control-height-lg: 54px;
+    }
+
+    :global {
+      .ant-form-item-label {
+        --ant-form-label-color: #4a5568;
+      }
+    }
+  }
+}

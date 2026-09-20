@@ -1,0 +1,66 @@
+.contracts {
+  .contracts__search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    :global {
+      .ant-input-affix-wrapper {
+        border-color: #999;
+        border-radius: 100px;
+      }
+
+      .ant-btn {
+        border-color: #999;
+        border-radius: 100px;
+        color: #999;
+      }
+    }
+  }
+
+  .contracts__title {
+    color: #999;
+    font-size: 12px;
+    margin-top: 18px;
+  }
+
+  .contracts__list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .contracts__item {
+      background-color: #e8edf5;
+      border-radius: 100px;
+      padding: 5px 16px;
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .name {
+        flex-grow: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .actions {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+.contracts-tooltip {
+  --antd-arrow-background-color: white;
+  --ant-color-bg-spotlight: white;
+  --ant-color-text-light-solid: #333;
+  :global {
+    .ant-tooltip-inner {
+      font-weight: bold;
+      border-radius: 12px;
+    }
+  }
+}

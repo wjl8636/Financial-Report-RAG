@@ -1,0 +1,36 @@
+.com-markdown {
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  pre > code {
+    background-color: white;
+    display: block;
+    padding: 0.5em;
+    -webkit-text-size-adjust: none;
+    overflow-x: auto;
+    white-space: pre;
+  }
+
+  table {
+    background-color: white;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 6px;
+
+    &,
+    td,
+    th {
+      border: 1px solid #ddd;
+    }
+
+    td,
+    th {
+      padding: 8px 12px;
+    }
+  }
+}

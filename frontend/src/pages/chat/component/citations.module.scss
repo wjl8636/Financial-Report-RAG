@@ -1,0 +1,124 @@
+.citations {
+  .citations__search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    :global {
+      .ant-input-affix-wrapper {
+        border-color: #999;
+        border-radius: 100px;
+      }
+
+      .ant-btn {
+        border-color: #999;
+        border-radius: 100px;
+        color: #999;
+      }
+    }
+  }
+
+  .citations__title {
+    color: #999;
+    font-size: 12px;
+    margin-top: 18px;
+  }
+
+  .citations__list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    .citations__item {
+      background-color: #ffffff;
+      box-shadow: 0px 2px 8px 0px rgba(206, 215, 218, 0.251);
+      border-radius: 12px;
+
+      .actions {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 4px;
+        padding-top: 4px;
+        margin-bottom: -4px;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 16px;
+
+        .name {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 14px;
+          font-weight: bold;
+          color: #333;
+        }
+
+        .score {
+          flex-shrink: 0;
+          color: #999;
+          font-size: 10px;
+          background-color: #e5ebf5;
+          padding: 0 4px;
+        }
+      }
+
+      .desc {
+        margin-top: 4px;
+        padding: 0 16px;
+        font-size: 10px;
+        color: #333;
+        line-height: 1.2;
+
+        display: -webkit-box;
+        line-clamp: 4;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 1.2 * 4em;
+      }
+
+      .footer {
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-end;
+
+        .footer-desc {
+          padding: 2px 16px;
+          font-size: 10px;
+          color: #999;
+          flex-grow: 1;
+        }
+
+        .footer-button {
+          flex-shrink: 0;
+          border-radius: 12px 0 12px 0;
+          min-width: 100px;
+          font-weight: bold;
+
+          background: linear-gradient(
+            92.67deg,
+            #629bff 7.06%,
+            #0660fe 94.68%
+          ) !important;
+        }
+      }
+    }
+  }
+}
+
+.citations-tooltip {
+  --antd-arrow-background-color: white;
+  --ant-color-bg-spotlight: white;
+  --ant-color-text-light-solid: #333;
+  :global {
+    .ant-tooltip-inner {
+      font-weight: bold;
+      border-radius: 12px;
+    }
+  }
+}

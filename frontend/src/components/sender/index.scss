@@ -1,0 +1,54 @@
+.com-sender {
+  background-color: rgba(white, 0.7);
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+
+  .ant-input {
+    background: transparent;
+    border: none;
+    padding: 14px 16px;
+    box-shadow: none;
+  }
+
+  .com-sender__actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+    padding-top: 0;
+
+    .com-sender__action--contract {
+      min-width: 108px;
+      max-width: 200px;
+      font-size: 16px;
+      color: #333;
+      overflow: hidden;
+
+      .document-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .com-sender__action--send {
+      min-width: 108px;
+      font-weight: bold;
+      font-size: 16px;
+      background: linear-gradient(
+        88.94deg,
+        #0862fe -30.91%,
+        #639bff 46.27%,
+        #0862fe 125%
+      ) !important;
+      border: 2px solid #c7dfff;
+      box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.8) inset;
+
+      position: relative;
+
+      img {
+        width: 7px;
+        height: 10px;
+      }
+    }
+  }
+}

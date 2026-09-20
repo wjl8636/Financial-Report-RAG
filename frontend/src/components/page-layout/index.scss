@@ -1,0 +1,28 @@
+.com-page-layout {
+  display: flex;
+
+  .com-page-layout__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 600px;
+
+    .com-page-layout__main-content {
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+  }
+
+  .com-page-layout__sender {
+    position: sticky;
+    bottom: 0;
+    z-index: 900;
+    padding: 18px 40px;
+  }
+
+  .com-page-layout__right {
+    flex-shrink: 0;
+    width: 408px;
+  }
+}
