@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📊 金融研报 RAG · 深维学院
+# 📊 金融研报 RAG
 
 **面向金融研报场景的智能文档问答系统（RAG）**
 
@@ -299,24 +299,8 @@ ES 至少需要 1GB 内存，建议宿主机可用内存 ≥ 4GB，可通过 `ME
 
 ---
 
-## 📌 部署注意事项（GitHub）
-
-> ⚠️ 将本项目推送到 GitHub 时，请务必先完成以下处理：
-
-- 确认 `.gitignore` 已排除敏感文件：`backend/.env`、`frontend/.env`（含 API Key / 密钥）。
-- **不要提交大体积文件**（如 `wsl启动rag项目/wsl环境启动rag项目.mp4`，约 800MB）——建议本地保留并加入 `.gitignore`，使用 Git LFS 或外链替代。
-- 示例与测试文档（`test_docx.docx`、`国电电力.pdf` 等）可按需保留或移除。
-
----
-
 ## 📄 许可证
 
 本项目仅用于学习与技术交流，具体许可条款请以仓库 LICENSE 文件为准。
 
 ---
-
-<div align="center">
-
-**Made with ❤️ · 深维学院 · 金融研报 RAG**
-
-</div>
