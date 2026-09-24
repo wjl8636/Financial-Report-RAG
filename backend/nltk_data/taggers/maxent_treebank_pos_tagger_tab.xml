@@ -1,0 +1,5 @@
+<package id='maxent_treebank_pos_tagger_tab' 
+         name='Treebank Part of Speech Tagger (Maximum entropy)'
+         languages="English"
+         unzip="1"
+         />

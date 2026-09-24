@@ -1,0 +1,9 @@
+<package id="verbnet"
+         name="VerbNet Lexicon, Version 2.1"
+         version="2.1"
+         author="Karin Kipper-Schuler"
+         webpage="https://verbs.colorado.edu/verbnet/"
+         license="Distributed with permission of the author."
+         unzip="1"
+         />
+

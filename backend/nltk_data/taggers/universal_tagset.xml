@@ -1,0 +1,7 @@
+<package id="universal_tagset" 
+         name="Mappings to the Universal Part-of-Speech Tagset"
+	 author="Slav Petrov"
+	 license="CC-BY-SA-4.0"
+	 webpage="https://github.com/slavpetrov/universal-pos-tags"
+         unzip="1"
+         />
